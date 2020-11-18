@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Reference Manual</title>
+
+</head>
+
+<body>
+    <hr />
+    <a href="Index.html">Index</a> |
+    <a href="ReferenceManual.html">Reference Manual</a> |
+    <a href="Table1.html">Table 1</a> |
+    <a href="Table2.html">Table 2</a> |
+    <hr />
+    <a href="#Abstract">Jump to Abstract</a> |
+    <a href="#Details">Jump to Details</a> |
+    <a href="#Examples">Jump to Examples</a> |
+    <hr />
+
+    <article>
+        <h1>Semantic Tags: <code>&lt;a&gt;</code></h1>
+        <section>
+            <h2 id="Abstract">Abstract</h2>
+            <p>
+                The anchor tag, or <code>&lt;a&gt;</code>, is a type of element in HTML 5 used to create links. 
+                These links can be used to access different websites across the Web, to sites within your Web page,
+                or to positions on sites.
+            </p>
+            <p>
+                Hyperlinks using <code>&lt;a&gt;</code> can be classified as: <strong>absolute links</strong>, <strong>relative links</strong> , and <strong>bookmarks</strong>.  
+            </p>
+        </section>
+        <section>
+            <h2 id="Details">Details</h2>
+            <ul>
+                <li>The <code>&lt;a&gt;</code> tag is an anchor element used to create links.</li>
+                <li>These links include:
+                  <ul>
+                    <li><strong>Absolute links</strong>-Hyperlinks that contain complete URL references to sites on the Web.</li>
+                    <li><strong>Relative links</strong>-Links that contain a relative to a URL within your Web site.</li>
+                    <li><strong>Bookmarks</strong>-Links to content on the same page as the hyperlink.</li>
+                  </ul>
+                </li>
+                <li>The <code>&lt;a&gt;</code> tag syntax requires the use of the <code>href</code> and <code>id</code> attributes.   
+                    <ul>
+                        <li><code>href</code> is used to contain the URL reference, whether it is absolute or relative.</li>
+                        <li><code>id</code> is used to identify bookmarks (locations of reference) within a document.</li> 
+                    </ul>
+                </li>
+                <li>When using the <code>&lt;a&gt;</code> tag in a absolute or a relative link, always keep in mind that 
+                    when using links, be sure to distinguish where to put characters when using the <code>&lt;</code> and <code>&gt;</code> expressions.</li>
+                <li>The <code>&lt;a&gt;</code> tag can also be used to import images into a file.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="Examples">Examples</h2>
+            <p>The first example will show a basic absolute link; that is, one that will redirect you to another website using their URL.</p>
+            <a href="http://unr.edu/">University of Nevada, Reno</a>
+            <p>In the preceding link, clicking it will take the user to the hompage of the University of Nevada, Reno</p>
+            <p>The code is as follows: <code>&lt;a href="http://unr.edu/"&gt;University of Nevada, Reno&lt;&#47;a&gt;</code></p>
+            <p>As seen in the code, the <code>&lt;a&gt;</code> tag is put first, and within the tag, the <code>href</code> attribute
+                is used to identify the URL, which in this case is the homepage for UNR. The <code>&lt;a&gt;</code> tag is then closed, 
+                completing the link.</p>
+            <br />
+            <hr />
+            <p>The second example will demonstrate a relative link, which will redirect the user to another page within your web site.</p>
+            <a href="Index.html">Index</a>
+            <p>This hyperlink will redirect the user to the "Index" page on this site. It is the same as the hyperlink in the menu at the 
+                top of the page.</p>
+            <p>The code is as follows: <code>&lt;a href="Index.html"&gt;Index&lt;&#47;a&gt;</code></p>
+            <p>This code works similar to the absolute link variant, but the URL being referenced must be within your site and named 
+                appropriately.</p>
+            <br />
+            <hr />
+            <p>The third example will show how to perform a bookmark, which will lead the user to content on the same page.</p>
+            <a href="#Abstract">Jump to Abstract</a>
+            <p>This hyperlink will, when clicked, jump to the "Abstract" section of the page. It is the same as the bookmarks below the menu</p>
+            <p>The code is as follows: <code>&lt;a href="#Abstract"&gt;Jump to Abstract&lt;&#47;a&gt;</code></p>
+            <p>In order for bookmarks to work, an <code>id</code> attribute must be set at the location where the bookmark is needed;
+                in this case, the "Abstract" section. The code is set within the <code>&lt;h2&gt;</code> tag, whichever numbered header it is.
+                In the code, it is: <code>&lt;h2 id="Abstract"&gt;Abstract&lt;&#47;a&gt;</code></p>
+            <p>LIkewise with the other examples, the syntax requires an identifier for reference, but this reference 
+                must be connected to a section within the page, as stated before.
+            </p>
+        </section>
+    </article>
+    <hr />
+    <p>&copy;Tanner Cunningham</p>
+    <img src="reference_validation.PNG" alt="Validation" height="150" width="200" />
+</body>
+
+</html>
